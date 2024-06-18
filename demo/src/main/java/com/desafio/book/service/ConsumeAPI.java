@@ -8,6 +8,7 @@ import java.net.http.HttpResponse;
 
 public class ConsumeAPI {
     public String obtenerDatos(String url){
+
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(url))
